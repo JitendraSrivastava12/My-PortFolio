@@ -5,8 +5,6 @@
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat&logo=vite)](https://vitejs.dev/)
 
 Live Demo: [https://whimsical-peony-00a6f8.netlify.app/](https://whimsical-peony-00a6f8.netlify.app/)
-
-![Portfolio Screenshot]!(https://raw.githubusercontent.com/JitendraSrivastava/My-PortFolio/Screenshot%202025-03-31%20014721.png)
  <!-- Add actual screenshot -->
 
 A modern, responsive portfolio website showcasing my professional projects, skills, and experience.
