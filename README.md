@@ -1,6 +1,4 @@
 # My Professional Portfolio 🌐
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_DEPLOY_ID/deploy-status)](https://app.netlify.com/sites/whimsical-peony-00a6f8/deploys)
 [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat&logo=vite)](https://vitejs.dev/)
 
