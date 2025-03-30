@@ -6,7 +6,7 @@
 
 Live Demo: [https://whimsical-peony-00a6f8.netlify.app/](https://whimsical-peony-00a6f8.netlify.app/)
 
-![Portfolio Screenshot](.screenshot.png) <!-- Add actual screenshot -->
+![Portfolio Screenshot](.Screenshot 2025-03-31 014721.png) <!-- Add actual screenshot -->
 
 A modern, responsive portfolio website showcasing my professional projects, skills, and experience.
 
