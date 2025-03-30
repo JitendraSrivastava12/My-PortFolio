@@ -33,54 +33,53 @@ A modern, responsive portfolio website showcasing my professional projects, skil
 ## Installation 🛠️
 
 1. Clone the repository
-```bash
-git clone https://github.com/your-username/portfolio.git
-Install dependencies
+   ```bash
+   git clone https://github.com/JitendraSrivastava12/portfolio.git
+2.Install dependencies
 bash
 cd portfolio
 npm install
-2.Start development server
+Start the development server
+bash
 npm run dev
 Open http://localhost:3000 in your browser
 
-
-## Deployement  🚀
-This project is automatically deployed on Netlify through CI/CD:
-
-Production Branch: master
-
-Build Command: npm run build
-
-Publish Directory: dist
-
-Configuration ⚙️
-Create .env file in root directory:
-
+## Environment Variables
+Create a .env.local file in the root directory with necessary variables:
 env
-VITE_GA_ID=UA-XXXXX-X # For Google Analytics
-VITE_FORMSPREE_ID=your-formspree-id
-
-<h3>Contributing</h3> 🤝
+NEXT_PUBLIC_API_KEY=your_api_key_here
+## Contributing
 Contributions are welcome! Please follow these steps:
 
-1.Fork the repository
+1.Fork the project
 
-2.Create your feature branch (git checkout -b feature/amazing-feature)
+2.Create your feature branch (git checkout -b feature/AmazingFeature)
 
-3.Commit your changes (git commit -m 'Add some amazing feature')
+3.Commit your changes (git commit -m 'Add some AmazingFeature')
 
-4.Push to the branch (git push origin feature/amazing-feature)
+4.Push to the branch (git push origin feature/AmazingFeature)
 
 5.Open a Pull Request
 
-License 📄
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Licenses
+Distributed under the MIT License. See LICENSE for more information.
 
-Contact 📬
+
+## Contact 📧
+Jitendra Srivastava
+
 GitHub: @JitendraSrivastava12
 
-Email: your.email@domain.com
+LinkedIn: jitendra-srivastava
 
-LinkedIn: Your LinkedIn Profile
+Email: jitendra.ug23@nitp.ac.in
 
-Copy
+## Acknowledgments
+1.epub.js for eBook rendering
+
+2.Next.js Documentation
+
+3.React Icons
+
+4.Tailwind CSS
+
