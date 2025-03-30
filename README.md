@@ -60,7 +60,7 @@ env
 VITE_GA_ID=UA-XXXXX-X # For Google Analytics
 VITE_FORMSPREE_ID=your-formspree-id
 
-<h3>Contributing<h3> 🤝
+<h3>Contributing</h3> 🤝
 Contributions are welcome! Please follow these steps:
 
 1.Fork the repository
