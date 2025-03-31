@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+
+    <div class="bg-black p-8 rounded-lg shadow-lg w-96">
+        <h2 class="text-white text-2xl font-bold mb-4">Contact Us</h2>
+        
+        <form id="contactForm">
+            <div class="mb-4">
+                <label class="text-white block mb-1">Name</label>
+                <input type="text" id="name" name="name" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="text-white block mb-1">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="text-white block mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg border-gray-600">Send</button>
+        </form>
+
+        <p id="statusMessage" class="text-green-400 text-center mt-4 hidden">Message Sent Successfully!</p>
+    </div>
+
+    <script>
+        (function() {
+            emailjs.init("0qKNTGZzsTgTJ-diC"); // Replace with your EmailJS Public Key
+        })();
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const serviceID = "service_zgqm8ix"; // Replace with your EmailJS service ID
+            const templateID = "template_0wwgxj9"; // Replace with your EmailJS template ID
+
+            const templateParams = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            };
+
+            emailjs.send(serviceID, templateID, templateParams)
+            .then(function(response) {
+                console.log("SUCCESS!", response.status, response.text);
+                document.getElementById("statusMessage").classList.remove("hidden");
+            }, function(error) {
+                console.log("FAILED...", error);
+                alert("Failed to send message. Please try again.");
+            });
+
+            this.reset(); // Clear form after submission
+        });
+    </script>
+
+</body>
+</html>
